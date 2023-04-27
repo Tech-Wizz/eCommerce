@@ -1,0 +1,114 @@
+<script>
+    function filterProducts() {
+      var selectedProduct = document.getElementById("productType").value;
+      var productList = document.getElementById("productList").getElementsByTagName("li");
+
+      for (var i = 0; i < productList.length; i++) {
+        var productType = productList[i].querySelector(".productType").textContent;
+
+        if (selectedProduct === "all" || selectedProduct === productType) {
+            productList[i].style.display = "block";
+        } else {
+            productList[i].style.display = "none";
+        }
+      }
+    }
+</script>
+
+<body>
+    <h2>North Bridger Bison</h2>
+    <label for="productType">Filter by Type of Product:</label>
+    <select id="productType" onchange="filterProducts()">
+      <option value="all">All Products</option>
+      <option value="Meat">Meat</option>
+      <option value="Merchandise">Merchandise</option>
+      <option value="Products">Products</option>
+      <!-- Add more types as needed -->
+    </select>
+    <ul id="productList">
+      <li>
+        <h2>Quarter Bison (Deposit)</a></h2>
+        <img src="images/Meat.jpg" alt="Meat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Meat</p>
+        <p>$775.00</p>
+      </li>
+      <li>
+        <h2>Half Bison (Deposit)</a></h2>
+        <img src="images/Meat.jpg" alt="Meat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Meat</p>
+        <p>$1,500.00</p>
+      </li>
+      <li>
+        <h2>Whole Bison (Deposit)</a></h2>
+        <img src="images/Meat.jpg" alt="Meat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Meat</p>
+        <p>$2,500.00</p>
+      </li>
+      <li>
+        <h2>Ground Bison 1/4 (Deposit)</a></h2>
+        <img src="images/groundbison.jpeg" alt="Meat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Meat</p>
+        <p>$775.00</p>
+      </li>
+      <li>
+        <h2>The NBB Hoody</a></h2>
+        <img src="images/hoodie.png" alt="Hoody"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$55.00</p>
+      </li>
+      <li>
+        <h2>NBB Men's Navy Blue t-shirt</a></h2>
+        <img src="images/menshirt.png" alt="Shirt"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>NBB Women's Navy Blue t-shirt</a></h2>
+        <img src="images/womenshirt.png" alt="Shirt"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>NBB Men's Natural Blue t-shirt</a></h2>
+        <img src="images/menwhite.png" alt="Shirt"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>NBB Women's Natural Blue t-shirt</a></h2>
+        <img src="images/womenwhite.png" alt="Shirt"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>The Bees, Butterflies, Grassfed Meat t-shirt</a></h2>
+        <img src="images/womenwhite.png" alt="Shirt"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>The NBB MIIR Travel Mug</a></h2>
+        <img src="images/mug.jpg" alt="Mug"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>The Otto Trucher</a></h2>
+        <img src="images/trucker.jpg" alt="Hat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>Sarah's Corduroy Combo</a></h2>
+        <img src="images/corduroy.jpg" alt="Hat"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Merchandise</p>
+        <p>$27.50</p>
+      </li>
+      <li>
+        <h2>NBB Bison Skull</a></h2>
+        <img src="images/skull.jpg" alt="Skull"data-image-dimensions="2255x1656" data-image-focal-point="0.5,0.5" alt="DSC_0051.jpg"  data-load="false"/>
+        <p class="productType" hidden>Products</p>
+        <p>$475.00</p>
+      </li>
+    </ul>
+</body>
